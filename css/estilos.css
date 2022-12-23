@@ -94,8 +94,8 @@ input[type="submit"]:hover{
 }
 
 /*MOBILE*/
-@media screen and (max-width:375px),
-        screen and (max-height:1484px){
+@media screen and (max-width:375px)/*,
+        screen and (max-height:1484px)*/{
     body{
         max-width: 375px;
         max-height: 1484px;
@@ -445,12 +445,14 @@ screen and (max-height:812px){
 
 /*DESKTOP- Mis Proyectos*/
 .contenedor_proyectos{
-    position: absolute;
+    position: relative;
     width: 100%;
+    margin-top: 5.625rem;
+
 }
 
 .mis_proyectos{
-    margin-top: 2.3rem;
+    margin-top: 1.175rem;
 }    
 
 .titulo_proyectos{
