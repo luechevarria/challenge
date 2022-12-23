@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--open-sans);
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+:root{
+    --open-sans: 'Open sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+/*Mis Proyectos*/
+.contenedor_proyectos{
+    width: 100%;
+   /* text-align: center;*/
+}
+.mis_proyectos{
+    text-align: center;
+}
+
+/*Contacto*/
+.contenedor_contacto{
+    width: 90%;
+}
+
+.formulario_contacto{
+    width: 100%;
+    display: flex;
+}
+
+.formulario_contacto textarea,.formulario_contacto input{
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 0.05rem #808080 solid;
+    background-color: #fff;
+    padding-left: 0.8rem;
+    line-height: 1.188rem;
+    border-radius: 0.25rem;
+}
+
+.formulario_contacto textarea{
+    padding-top: 0.8rem;
+    resize: vertical;
+}
+
+.formulario_contacto input{
+    height: 2.4rem;
+}
+
+input[type="submit"]{
+    border: 0.05rem solid #000000;
+    border-radius: 6.25rem;
+}
+  
+input[type="submit"]:hover{
+    background-color: #000000;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+/*Index*/
+
+.contenedor_index{
+    position: absolute;
+    width: 100%;
+    height: 31.5rem;
+    top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin: 0;
+
+}
+
+.texto_index{
+    position: absolute;
+    top:3.375rem;
+}
+
+/*MOBILE*/
+@media screen and (max-width:375px),
+        screen and (max-height:1484px){
+    body{
+        max-width: 375px;
+        max-height: 1484px;
+    } 
+/*Footer*/
+    .footer_mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 4.15rem;
+        background: rgba(249, 249, 249, 0.94);
+        /* tab bar / light & dark */
+        box-shadow: inset 0px 0.5px 0px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(13.5914px);
+        border-top: 0.025rem solid #d2d2d8;
+        justify-content: space-between;
+
+    }
+
+    .iconos{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 0.50rem 0.50rem 0rem 0.50rem;
+    }
+
+    .home{
+        text-align: center;
+        padding-bottom: 0.2rem;
+    }
+
+    
+
+    .inicio, .miTrabajo, .sobreMi, .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:0.25rem
+    }
+
+    .inicio p, .miTrabajo p, .sobreMi p, .contacto p{
+        font-size: 0.5rem;
+        font-weight: 600;
+        line-height: 0.6rem;
+        letter-spacing: 0.008rem;
+        color: #8E8E93;
+
+    }
+
+    .inicio img[src="css/imagenes/icon_index.png"]{
+        width: 1rem;
+        height: .85rem;
+    }
+
+    .miTrabajo img[src="css/imagenes/icon_portfolio.png"]{
+        width: 0.934rem;
+        height: 0.96rem;
+    }
+
+    .sobreMi img[src="css/imagenes/icon_sobreMi.png"]{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .contacto img[src="css/imagenes/icon_contacto.png"]{
+        width: 1.05rem;
+        height: 0.9rem;
+    }
+
+   
+
+    /*Mis Proyectos*/    
+    .contenedor_proyectos{
+        position: absolute;
+        top: 3.6rem;
+    }
+
+    .titulo_proyectos{
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    .cuerpo_proyectos{
+        position: relative;
+        top: 0.25rem;
+    }
+
+    .imagenes_proyectos{
+        display: flex;
+        flex-direction: column;
+        gap:1.9rem;
+    }
+}
+
+@media screen and (max-width:375px),
+screen and(max-height:919px){
+    body{
+        max-width: 375px;
+        max-height: 919px;
+    }
+
+    .header_desktop, .footer_desktop{
+        display: none;
+    }
+
+    /*Sobre Mi*/
+    .contenedor_sobreMi{
+        position: absolute;
+        margin: 4.75rem 1rem 0 1rem;
+
+    }
+
+    .titulo_sobreMi{
+        position: relative;
+        margin-left: -0.2rem;
+    }
+
+    .texto_sobreMi{
+        margin-top: 0.8rem;
+        text-align: justify;
+        font-weight: 400;
+        line-height: 1.362rem;
+    }
+
+    /*Contacto*/
+    .contenedor_contacto{
+        display: flex;
+        margin: 1rem;
+        flex-direction: column;
+    }
+    .p_contacto{
+        margin: 0.8rem 0rem;
+    }
+
+    .enviar_email{
+        font-weight: 400;
+    }
+
+    .formulario_contacto,.inputs_nomape{
+        flex-direction: column;
+        justify-content: space-around;
+        gap:1.875rem;
+
+    }
+
+    .formulario_contacto{
+        margin: 1.795rem 0rem 2.25rem 0rem;
+    }
+
+    .inputs_nomape{
+        display: flex;
+    }
+
+    .formulario_contacto input, .formulario_contacto textarea{
+        /*width: 16rem;*/
+        width: 100%;
+    }
+
+    .formulario_contacto input{
+        height: 2.428rem;
+    }
+
+   
+}
+
+@media screen and (max-width:375px),
+screen and (max-height:812px){
+     /*Index*/
+    body{
+        max-width: 18.75rem;
+        max-height: 40.6rem;
+    }
+
+    .texto_index a[href="portfolio.html"]{
+        display: none;
+    } 
+
+    #ellipse-1{
+        width: 2.5%;
+        left: 3.2rem;
+        top: 15rem;
+        border-radius: 0rem;
+        position: absolute;
+    }
+
+    #ellipse-2{
+        width: 7%;
+        left: 5.1rem;
+        top: 10.35rem;
+        border-radius: 0rem;
+        position: absolute;
+    }
+
+    #ellipse-3{
+        width: 18%;
+        left: 1.05rem;
+        top: 9rem;
+        border-radius: 0rem;
+        position: absolute;
+    }
+
+    #ellipse-4{
+        width: 18%;
+        left: 6.05rem;
+        top: 13.25rem;
+        border-radius: 0rem;
+        position: absolute;
+    }
+
+    #foto-lu{
+        width: 42%;
+        left: 9.7rem;
+        top: 12.15rem;
+        border-radius: 0rem;
+        position: absolute;
+    }
+
+    #ellipse-5{
+        width: 55%;
+        left: 0.8rem;
+        top: 20.8rem;
+        border-radius: 0rem;
+        position: absolute;
+
+    }
+
+    #ellipse-6{
+            width: 60%;
+            left: 5.3rem;
+            top: 18.3rem;
+            border-radius: 0rem;
+            position: absolute;
+            z-index: -1;
+    }
+     
+}
+
+/*DESKTOP*/
+/*footer*/
+@media (min-width:376px){
+
+    .header_mobile, .footer_mobile{
+        display: none;
+    }
+
+    .footer_desktop{
+        height: 4.5rem;
+        padding:1.625rem 1.625rem;
+        text-align: center;
+        color:#fff;
+        background-color: #000000;
+        width: 100%;
+        font-size: 0.8rem;
+        }
+
+/*body*/
+    body{
+        margin-top: 0rem;
+        max-width: 80rem;
+        max-height: 27rem;
+    }
+
+
+
+/*header barra de navegación */
+    nav{
+        position: absolute;
+        width: 100%;
+        left: 0rem;
+        top: 0rem;
+    }
+
+    .header_desktop{
+        width: 100%;
+        list-style-type:none;
+        overflow: hidden;
+        margin:0;
+        padding-top: 2.85rem;
+        padding-bottom: 0.4rem;
+        height: 4.5rem;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+   .header_enlaces{
+    display: flex;
+    margin-right: 4.132rem;
+   }
+  
+    .header_enlaces li {
+        float:right;
+        flex-direction: row;
+    }
+ 
+ 
+    .header_enlaces li a{
+        padding: 0.4rem;
+        color: #676262;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .header_enlaces li a:hover{
+        text-decoration: underline;
+        color:#676262;
+    }
+
+    .header_enlaces li a:active{
+        text-decoration: underline;
+        color:black;
+    }
+
+
+    
+/*Sobre Mi*/
+
+    .contenedor_sobreMi{
+        position: absolute;
+        width: 62%;
+        left: 12rem;
+        top: 7.5rem;
+    }
+    .titulo_sobreMi{
+        text-align: center;
+        font-weight: 600;
+
+    }
+    .texto_sobreMi{
+        margin-top: 1.6rem;
+        line-height: 1.35rem;
+        text-align: justify;
+
+    }
+
+/*DESKTOP- Mis Proyectos*/
+.contenedor_proyectos{
+    position: absolute;
+    width: 100%;
+}
+
+.mis_proyectos{
+    margin-top: 2.3rem;
+}    
+
+.titulo_proyectos{
+    position: relative;
+    font-weight: 600;
+    line-height: 2.524rem;
+    text-align: center;
+}
+
+.cuerpo_proyectos{
+    position: relative;
+    height: 1.35rem;
+    margin-top: 1rem;
+    height: 1.35rem;
+    text-align: center;
+
+}
+
+.imagenes_proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.div_img_bodas, .div_img_glucose, .div_img_bco_patagonia{
+    text-align: justify;
+    position: relative;
+    width: 18rem;
+    height: 19rem;
+}
+
+.texto_bodas, .texto_glucose, .texto_bco_pat{
+    position: absolute;
+    background-color: #317660D4;
+    width: 96%;
+    height: 98%;
+    padding: 0;
+    left: 0.07rem;
+    bottom: 0.25rem;
+    color: #fff;
+    border-radius: 2%;
+}
+
+img[src="css/imagenes/app-bodas.png"], img[src="css/imagenes/glucose-log.png"], img[src="css/imagenes/rediseño-banco-patagonia.png"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
+
+.p_org_boda_mas,.p_glucose_mas,.p_bco_pat_mas{
+    position: absolute;
+    left:42.5%;
+    top:6.83rem;
+    font-size: 5rem;
+    font-weight: 100;
+}
+.p_org_boda, .p_glucose, .p_bco_pat{
+    position: absolute;
+    left:28%;
+    bottom:3.15rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    padding: 0;
+}
+.p_bco_pat{
+    left:10%;
+}
+
+img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.png"]:hover, img[src="css/imagenes/rediseño-banco-patagonia.png"]:hover{
+    transform: scale(0.9);
+    opacity: 30%;
+}
+
+/*Contacto*/
+    .contenedor_contacto{
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: 5.625rem;
+        justify-content: space-around;
+    }
+
+    .main_contacto{
+        width: 28.8rem;
+        display: flex;
+        flex-direction:column;
+        margin-left: 10.938rem;
+        padding: 1.563rem 1.563rem 1.563rem 0;
+    }
+
+    .titulo_contacto{
+        height: 3.375rem;
+        line-height: 2.724rem;
+    }
+
+    .p_contacto{
+        margin-top: 2rem;
+    }
+
+    .seccion_contacto{
+        width: 28.8rem;
+        margin-right: 5rem;
+        display: flex;
+        margin-top: 0;
+    }
+
+    .formulario_contacto{
+        flex-direction:column;
+        width: 100%;
+        justify-content: space-around;
+        gap:1.875rem;    
+    }
+
+    .inputs_nomape{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #nombre, #apellido{
+        width: 48%;
+    }
+
+    input[type="submit"]{
+        font-family: var(--open-sans);
+        font-weight:400;
+        font-size: 1rem;
+        line-height:1.362rem;
+        width: 4.938rem;
+        height: 2.375rem;
+        padding: 0.5rem 1rem;
+    }
+
+/*Index-DESKTOP*/
+    .texto_index{
+        left:8.75rem;
+    }
+   
+
+    #ellipse-1{
+        position: absolute;
+        width: 3%;
+        left: 10.427rem;
+        top: 14.8rem;
+        border-radius: 0rem;
+    }
+
+    #ellipse-2{
+        position: absolute;
+        width: 0.86%;
+        left: 7.977rem;
+        top: 21.25rem;
+        border-radius: 0rem;
+    }
+
+
+    #ellipse-3{
+        position: absolute;
+        width: 7.23%;
+        left: 15.207rem;
+        top: 22.5rem;
+        border-radius: 0rem;
+    }
+
+    #ellipse-4{
+        position: absolute;
+        width: 7.23%;
+        left:3.107rem;
+        top: 7.05rem;
+        border-radius: 0rem;
+    }
+
+    #ellipse-5{
+        position: absolute;
+        width: 23.45rem;
+        left: 23.65rem;
+        top:7.85rem;
+        border-radius: 0rem;
+        /*z-index: -1;-*/
+
+    }
+
+    #ellipse-6{
+        position: absolute;
+        width: 41.5%;
+        left: 33.4rem;
+       top:05rem;
+        border-radius: 0rem;
+    }
+
+    #foto-lu{
+        width: 22%;
+        left:46rem;
+        top: 4.5rem;
+        border-radius: 0rem;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .texto_index{
+        top:3rem;
+    }
+
+    .texto_index p{
+        margin: 1.6rem rem;
+        width: 19.1rem;
+        height: 2.7rem;
+        line-height: 1.362rem;
+    }
+
+    .texto_index a[href="portfolio.html"]{
+        display: block;
+        border: 0.05rem solid #000000;
+        color: #000000;
+        border-radius: 5rem;
+        height: 1.9rem;
+        width: 5.45rem;
+        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        top:11.6rem;
+
+    } 
+   
+}
