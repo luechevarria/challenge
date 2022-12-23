@@ -169,7 +169,8 @@ input[type="submit"]:hover{
 
    
 
-    /*Mis Proyectos*/    
+    /*Mis Proyectos MOBILE*/    
+
     .contenedor_proyectos{
         position: absolute;
         top: 3.6rem;
@@ -190,6 +191,10 @@ input[type="submit"]:hover{
         display: flex;
         flex-direction: column;
         gap:1.9rem;
+    }
+    .texto_bco_pat, .texto_bodas, .texto_glucose{
+        display: none;
+    
     }
 }
 
