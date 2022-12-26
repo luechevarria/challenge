@@ -115,6 +115,10 @@ input[type="submit"]:hover{
 
     }
 
+    /*.footer_mobile:hover{
+
+    }*/
+
     .iconos{
         width: 100%;
         display: flex;
@@ -149,7 +153,7 @@ input[type="submit"]:hover{
 
     .inicio img[src="css/imagenes/icon_index.png"]{
         width: 1rem;
-        height: .85rem;
+        height: 1.063rem;
     }
 
     .miTrabajo img[src="css/imagenes/icon_portfolio.png"]{
@@ -166,8 +170,6 @@ input[type="submit"]:hover{
         width: 1.05rem;
         height: 0.9rem;
     }
-
-   
 
     /*Mis Proyectos MOBILE*/    
 
