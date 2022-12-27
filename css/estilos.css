@@ -270,7 +270,7 @@ screen and(max-height:919px){
 
 @media screen and (max-width:375px),
 screen and (max-height:812px){
-     /*Index*/
+     /*MOBILE Index*/
     body{
         max-width: 18.75rem;
         max-height: 40.6rem;
@@ -283,6 +283,10 @@ screen and (max-height:812px){
     .texto_index a[href="portfolio.html"]{
         display: none;
     } 
+
+    .texto_index p{
+        margin-top: 0.8rem;
+    }
 
     #ellipse-1{
         width: 2.5%;
