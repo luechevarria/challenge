@@ -706,7 +706,7 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
     }
 
     .texto_index a[href="portfolio.html"]{
-        display: block;
+        display: flex;
         border: 0.05rem solid #000000;
         color: #000000;
         border-radius: 5rem;
@@ -714,9 +714,8 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
         width: 5.45rem;
         padding: 0.4rem 0.8rem 0.4rem 0.8rem;
         font-size: 0.8rem;
-        top:11.6rem;
-        text-align: center;
-
+        align-items: center;
+        justify-content: center;
     } 
    
 }
