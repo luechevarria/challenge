@@ -423,24 +423,29 @@ screen and (max-height:812px){
 
 
     
-/*Sobre Mi*/
+/*DESKTOP Sobre Mi*/
 
     .contenedor_sobreMi{
         position: absolute;
-        width: 62%;
-        left: 12rem;
+        width: 100%;
+        padding-left: 12rem;
+        padding-right: 12rem;
         top: 7.5rem;
     }
+
     .titulo_sobreMi{
         text-align: center;
         font-weight: 600;
-
     }
+
+    br{
+        display: none;
+    }
+
     .texto_sobreMi{
         margin-top: 1.6rem;
         line-height: 1.35rem;
         text-align: justify;
-
     }
 
 /*DESKTOP- Mis Proyectos*/
