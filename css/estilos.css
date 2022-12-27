@@ -172,7 +172,7 @@ input[type="submit"]:hover{
 
     .contenedor_proyectos{
         position: absolute;
-        top: 3.6rem;
+        top: 3.8rem;
     }
 
     .titulo_proyectos{
@@ -211,7 +211,7 @@ screen and(max-height:919px){
     /*Sobre Mi*/
     .contenedor_sobreMi{
         position: absolute;
-        margin: 4.75rem 1rem 0 1rem;
+        margin: 3.8rem 1rem 0 1rem;
 
     }
 
@@ -230,7 +230,7 @@ screen and(max-height:919px){
     /*Contacto*/
     .contenedor_contacto{
         display: flex;
-        margin: 1rem;
+        margin: 3.8rem 0.8rem 1rem 0.8rem;
         flex-direction: column;
     }
     .p_contacto{
@@ -274,6 +274,10 @@ screen and (max-height:812px){
     body{
         max-width: 18.75rem;
         max-height: 40.6rem;
+    }
+
+    .texto_index{
+        top:3.8rem;
     }
 
     .texto_index a[href="portfolio.html"]{
