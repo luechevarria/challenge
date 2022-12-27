@@ -45,7 +45,7 @@ footer{
     display: flex;
 }
 
-.formulario_contacto textarea,.formulario_contacto input{
+.formulario_contacto textarea,.formulario_contacto input[type="text"]{
     font-size: 0.8rem;
     font-weight: 500;
     border: 0.05rem #808080 solid;
@@ -60,13 +60,19 @@ footer{
     resize: vertical;
 }
 
-.formulario_contacto input{
+.formulario_contacto input[type="text"]{
     height: 2.4rem;
 }
 
 input[type="submit"]{
     border: 0.05rem solid #000000;
     border-radius: 6.25rem;
+    background-color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 input[type="submit"]:hover{
@@ -227,7 +233,7 @@ screen and(max-height:919px){
         line-height: 1.362rem;
     }
 
-    /*Contacto*/
+    /*MOBILE Contacto*/
     .contenedor_contacto{
         display: flex;
         margin: 3.8rem 0.8rem 1rem 0.8rem;
@@ -613,14 +619,10 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
         width: 48%;
     }
 
-    input[type="submit"]{
+    .boton_enviar_contacto{
         font-family: var(--open-sans);
-        font-weight:400;
-        font-size: 1rem;
-        line-height:1.362rem;
-        width: 4.938rem;
-        height: 2.375rem;
-        padding: 0.5rem 1rem;
+        width: 3.95rem;
+        height: 1.9rem;
     }
 
 /*Index-DESKTOP*/
