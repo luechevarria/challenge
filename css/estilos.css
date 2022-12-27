@@ -268,12 +268,18 @@ screen and(max-height:919px){
    
 }
 
-@media screen and (max-width:375px),
-screen and (max-height:812px){
+@media screen and (max-width:375px)/*,
+screen and (max-height:812px)*/{
      /*MOBILE Index*/
     body{
         max-width: 18.75rem;
         max-height: 40.6rem;
+    }
+
+    .contenedor_index{
+        margin: 0.8rem;
+        width: 100%;
+        padding: 0;
     }
 
     .texto_index{
@@ -286,36 +292,52 @@ screen and (max-height:812px){
 
     .texto_index p{
         margin-top: 0.8rem;
+        line-height: 1.35rem;
     }
 
+    .imagenes_index{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10.2rem;
+    }
+
+    .imagenes_pequenias{
+        position:relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
     #ellipse-1{
-        width: 2.5%;
-        left: 3.2rem;
-        top: 15rem;
+        width: 6%;
+        left: 1.5rem;
+        top: 10.35rem;
         border-radius: 0rem;
         position: absolute;
     }
 
     #ellipse-2{
-        width: 7%;
-        left: 5.1rem;
-        top: 10.35rem;
+        width: 2.5%;
+        right: 3.2rem;
+        top: 25rem;
         border-radius: 0rem;
         position: absolute;
     }
 
     #ellipse-3{
         width: 18%;
-        left: 1.05rem;
-        top: 9rem;
+        left: 4.05rem;
+        top: 2rem;
         border-radius: 0rem;
-        position: absolute;
+        position: relative;
     }
 
     #ellipse-4{
+        display:none;
         width: 18%;
         left: 6.05rem;
-        top: 13.25rem;
+        top: 9.25rem;
         border-radius: 0rem;
         position: absolute;
     }
@@ -323,24 +345,24 @@ screen and (max-height:812px){
     #foto-lu{
         width: 42%;
         left: 9.7rem;
-        top: 12.15rem;
+        top: 3.15rem;
         border-radius: 0rem;
         position: absolute;
     }
 
     #ellipse-5{
-        width: 55%;
-        left: 0.8rem;
-        top: 20.8rem;
+        width: 65%;
+        left: 0.2rem;
+        top: 11.8rem;
         border-radius: 0rem;
         position: absolute;
 
     }
 
     #ellipse-6{
-            width: 60%;
-            left: 5.3rem;
-            top: 18.3rem;
+            width: 70%;
+            left: 4.5rem;
+            top: 10.3rem;
             border-radius: 0rem;
             position: absolute;
             z-index: -1;
