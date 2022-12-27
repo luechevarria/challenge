@@ -344,7 +344,7 @@ screen and (max-height:812px){
 /*footer*/
 @media (min-width:376px){
 
-    .header_mobile, .footer_mobile{
+    .footer_mobile{
         display: none;
     }
 
@@ -597,7 +597,7 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
     .contenedor_index{
         margin-top:4.5rem;
     }
-    
+
     .texto_index{
         left:8.75rem;
     }
