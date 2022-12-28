@@ -180,14 +180,23 @@ input[type="submit"]:hover{
     /*Mis Proyectos MOBILE*/    
 
     .contenedor_proyectos{
-        position: absolute;
-        top: 3.8rem;
+        position: relative;
+        width: auto;
+        margin: 3.8rem 0.3rem 4.15rem 0.3rem;
+    }
+
+    .mis_proyectos{
+        position: relative;
+        width: 17.15rem;
+        height: 4.45rem;
+        margin:0rem 0.5rem 1.6rem 0.5rem;
+        text-align: center;
     }
 
     .titulo_proyectos{
         font-weight: 600;
         text-align: center;
-
+        height: 2.5rem;
     }
 
     .cuerpo_proyectos{
@@ -196,13 +205,19 @@ input[type="submit"]:hover{
     }
 
     .imagenes_proyectos{
+        margin: 0rem 0rem 5.8rem 0rem;
         display: flex;
         flex-direction: column;
-        gap:1.9rem;
+        gap:1.6rem;
     }
+
     .texto_bco_pat, .texto_bodas, .texto_glucose{
         display: none;
-    
+    }
+
+    .div_img_bco_patagonia, .div_img_bodas, .div_img_glucose{
+        width: 18.15rem;
+        height: 18.45rem;
     }
 }
 
