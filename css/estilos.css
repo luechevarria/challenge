@@ -301,7 +301,8 @@ screen and (max-height:812px)*/{
 
     .contenedor_index{
         margin: 0.8rem;
-        width: 100%;
+        width: 17.15rem;
+        height: 36.45rem;
         padding: 0;
     }
 
@@ -320,9 +321,9 @@ screen and (max-height:812px)*/{
 
     .imagenes_index{
         width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 10.2rem;
+        height: 26.25rem;
+        position: relative;
+        top: 9.55rem;
     }
 
     #ellipse-1{
