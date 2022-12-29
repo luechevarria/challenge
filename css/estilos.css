@@ -30,7 +30,6 @@ footer{
 /*Mis Proyectos*/
 .contenedor_proyectos{
     width: 100%;
-   /* text-align: center;*/
 }
 .mis_proyectos{
     text-align: center;
@@ -96,18 +95,12 @@ input[type="submit"]:hover{
     top:3.375rem;
 }
 
-/*MOBILE*/
+/*************************COMIENZO MOBILE***************************/
 @media screen and (max-width:375px){
     body{
         overflow: scroll;
     }
-/*}
-@media screen and (max-width:375px),
-        screen and (max-height:1484px){
-    body{
-        max-width: 375px;
-        max-height: 1484px;
-    } */
+
 /*Footer*/
     .footer_mobile{
         display: flex;
@@ -175,8 +168,6 @@ input[type="submit"]:hover{
         height: 0.9rem;
     }
 
-   
-
     /*Mis Proyectos MOBILE*/    
 
     .contenedor_proyectos{
@@ -218,14 +209,6 @@ input[type="submit"]:hover{
     .div_img_bco_patagonia, .div_img_bodas, .div_img_glucose{
         width: 18.15rem;
         height: 18.45rem;
-    }
-}
-
-@media screen and (max-width:375px)/*,
-screen and(max-height:919px)*/{
-    body{
-        max-width: 375px;
-        max-height: 919px;
     }
 
     .header_desktop, .footer_desktop{
@@ -303,15 +286,6 @@ screen and(max-height:919px)*/{
    
     .boton_enviar_contacto{
         height: 1.9rem;
-    }
-}
-
-@media screen and (max-width:375px)/*,
-screen and (max-height:812px)*/{
-     /*MOBILE Index*/
-    body{
-        max-width: 18.75rem;
-        max-height: 40.6rem;
     }
 
     .contenedor_index{
@@ -401,10 +375,11 @@ screen and (max-height:812px)*/{
     }
      
 }
+/*************************FIN MOBILE***************************/
 
-/*DESKTOP*/
-/*footer*/
+/*************************COMIENZO DESKTOP***********************/
 @media (min-width:376px){
+/*footer*/
 
     .footer_mobile{
         display: none;
@@ -419,14 +394,6 @@ screen and (max-height:812px)*/{
         width: 100%;
         font-size: 0.8rem;
         }
-
-/*body*/
-    body{
-        margin-top: 0rem;
-        max-width: 80rem;
-        max-height: 27rem;
-    }
-
 
 
 /*header barra de navegación */
@@ -510,101 +477,100 @@ screen and (max-height:812px)*/{
     }
 
 /*DESKTOP- Mis Proyectos*/
-.contenedor_proyectos{
-    position: relative;
-    margin:4.5rem 0 4.5rem 0;
-    width: 100%;
-    height: 100%;
-}
+    .contenedor_proyectos{
+        position: relative;
+        margin:4.5rem 0 4.5rem 0;
+        width: 100%;
+        height: 100%;
+    }
 
-.mis_proyectos{
-    margin-top: 2.3rem;
-    height: 4.852rem;
-}
+    .mis_proyectos{
+        margin-top: 2.3rem;
+        height: 4.852rem;
+    }
 
-.titulo_proyectos{
-    position: relative;
-    font-weight: 600;
-    line-height: 2.524rem;
-    text-align: center;
-}
+    .titulo_proyectos{
+        position: relative;
+        font-weight: 600;
+        line-height: 2.524rem;
+        text-align: center;
+    }
 
-.cuerpo_proyectos{
-    position: relative;
-    height: 1.35rem;
-    margin-top: 1rem;
-    text-align: center;
+    .cuerpo_proyectos{
+        position: relative;
+        height: 1.35rem;
+        margin-top: 1rem;
+        text-align: center;
 
-}
+    }
 
-.imagenes_proyectos{
-    width: auto;
-    height: 18.45rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:1.6rem 3.95rem 4.3rem 4rem;
+    .imagenes_proyectos{
+        width: auto;
+        height: 18.45rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin:1.6rem 3.95rem 4.3rem 4rem;
 
-}
-.div_img_bodas{
-    position: relative;
-    width: 17.45rem;
-    height: 18.45rem;
-}
+    }
 
-.div_img_glucose, .div_img_bco_patagonia{
-    position: relative;
-    width: 18.15rem;
-    height: 18.45rem;
-}
+    .p_org_boda_mas,.p_glucose_mas,.p_bco_pat_mas{
+        position: absolute;
+        left:42.5%;
+        top:6.83rem;
+        font-size: 5rem;
+        font-weight: 100;
+    }
+    .p_org_boda, .p_glucose, .p_bco_pat{
+        position: absolute;
+        left:28%;
+        bottom:3.15rem;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+        padding: 0;
+    }
 
-.texto_bodas, .texto_glucose, .texto_bco_pat{
-    display: inline;
-    position: absolute;
-    background-color: #317660D4;
-    background-position: center;
-    background-size: cover;
-    width:100%;
-    height: 100%;
-    padding: 0;
-    color: #fff;
-    border-radius: 2%;
-    z-index: -1;
-}
+    .p_bco_pat{
+        left:10%;
+    }
 
-img[src="css/imagenes/app-bodas.png"], img[src="css/imagenes/glucose-log.png"], img[src="css/imagenes/rediseño-banco-patagonia.png"]{
-    display: block;
-    margin:auto;
-    width: 100%;
-    height: 100%;
-} 
+    .div_bco_patagonia, .div_glucose{
+        position: relative;
+        width: 18.15rem;
+        height: 18.45rem;
+    }
 
-.p_org_boda_mas,.p_glucose_mas,.p_bco_pat_mas{
-    position: absolute;
-    left:42.5%;
-    top:6.83rem;
-    font-size: 5rem;
-    font-weight: 100;
-}
-.p_org_boda, .p_glucose, .p_bco_pat{
-    position: absolute;
-    left:28%;
-    bottom:3.15rem;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 23px;
-    padding: 0;
-}
-.p_bco_pat{
-    left:10%;
-}
+    .div_bodas{
+        position: relative;
+        width: 17.45rem;
+        height: 18.45rem;
+    }
 
-img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.png"]:hover, img[src="css/imagenes/rediseño-banco-patagonia.png"]:hover{
-    transform: scale(0.90);
-    transition:  300ms linear 0s;
-    opacity: 30%;
-}
+    .img_bco_pat, .texto_bco_pat, .img_bodas, .texto_bodas, .img_glucose, .texto_glucose{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .texto_bco_pat, .texto_bodas, .texto_glucose{
+        opacity: 0;
+        background-color: #317660D4;
+        color: #fff;
+
+    }
+
+    .div_bco_patagonia:hover, .div_glucose:hover,.div_bodas:hover{
+        transform: scale(0.90);
+        transition:  300ms linear 0s;
+        opacity: 70%;
+    }
+
+    .div_bco_patagonia:hover .texto_bco_pat, .div_glucose:hover .texto_glucose ,.div_bodas:hover .texto_bodas{
+        opacity: 1;
+    }
 
 /*DESKTOP Contacto*/
     body{
@@ -635,7 +601,6 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
         font-weight: 400;
         padding-right: 0.5rem;
         line-height: 1.362rem;
-
     }
 
     .seccion_contacto{
@@ -644,7 +609,6 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
         display: flex;
         margin: 0;
         height: 19rem;
-
     }
 
     .formulario_contacto{
@@ -742,13 +706,10 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
         left: 23.65rem;
         top:7.2rem;
         border-radius: 0rem;
-        /*z-index: -1;-*/
-
     }
 
     #ellipse-6{
         position: absolute;
-       /* width: 41.5%;*/
         width: 26.6rem;
         left: 33.4rem;
         top:0.85rem;
@@ -787,5 +748,5 @@ img[src="css/imagenes/app-bodas.png"]:hover, img[src="css/imagenes/glucose-log.p
         align-items: center;
         justify-content: center;
     } 
-   
+   /*************************FIN DESKTOP***********************/
 }
